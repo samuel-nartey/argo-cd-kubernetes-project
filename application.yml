@@ -4,21 +4,17 @@ metadata:
   name: my-argocd-application
   namespace: argocd
 spec:
-project: default
-
-source:
-  repoURL: https://github.com/samuel-nartey/argo-cd-kubernetes-project.git
-  targetRevision: HEAD
-  path: manifests
-
-Destination:
-  server: https://kubernetes.default.svc
-  namespace: ekspodns
-
-syncPolicy:
-  syncOptions:
-  - CreateNamespace=true
-
-  automated:
-    selfHeal: true
-    prune: true
+  project: default
+  source:
+    repoURL: https://github.com/samuel-nartey/argo-cd-kubernetes-project.git
+    targetRevision: HEAD
+    path: manifests
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ekspodns
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
