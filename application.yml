@@ -1,4 +1,4 @@
-verion: argoproj.io/v1alpha1
+version: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: my-argocd-application
@@ -7,18 +7,18 @@ spec:
 project: default
 
 source:
-  repoURL: 'https://github.com/samuel-nartey/argo-cd-kubernetes-project.git
+  repoURL: https://github.com/samuel-nartey/argo-cd-kubernetes-project.git
   targetRevision: HEAD
-  path:manifests
+  path: manifests
 
 Destination:
   server: https://kubernetes.default.svc
-  namespace:ekspodns
+  namespace: ekspodns
 
 syncPolicy:
-syncOptions:
+  syncOptions:
   - CreateNamespace=true
 
   automated:
-   selfHeal: true
-   prune: true
+    selfHeal: true
+    prune: true
