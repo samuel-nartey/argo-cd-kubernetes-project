@@ -20,7 +20,7 @@ To automate application deployments and configuration management on Kubernetes u
 
 ### Architecture Diagram
 
-![ArgoCDP2](project_screenshots/ArgoCDP2.jpg) 
+![ArgoCDP2](./project_screenshots/ArgoCDP2.jpg) 
 *Source diagram: ArgoCDP2.drawio*
 
 ### Workflow Breakdown
