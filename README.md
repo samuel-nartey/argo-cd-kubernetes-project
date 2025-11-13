@@ -1,9 +1,3 @@
-Got it! The issue is that in your current README, almost the entire content—including all images—is **inside code blocks or mixed with code fences**, so GitHub treats it as plain text and won’t render the images. We need to **pull all images and captions out of code blocks** while keeping commands in proper code fences.
-
-I’ve rewritten your README below. Everything is preserved, images have correct paths (`project_screenshots/...`), and commands remain in proper code blocks. This version will render correctly on GitHub.
-
----
-
 ````markdown
 # ArgoCDP2 – GitOps Continuous Deployment on Amazon EKS
 
@@ -26,7 +20,8 @@ To automate application deployments and configuration management on Kubernetes u
 
 ### Architecture Diagram
 
-![ArgoCDP2](project_screenshots/ArgoCDP2.jpg) `ArgoCDP2.drawio`
+![ArgoCDP2](project_screenshots/ArgoCDP2.jpg) 
+*Source diagram: ArgoCDP2.drawio*
 
 ### Workflow Breakdown
 
@@ -250,22 +245,4 @@ This project illustrates a standalone EKS cluster GitOps workflow leveraging Arg
 
 It demonstrates that Argo CD enforces Git as the single source of truth, automates deployments, and self-heals deviations, forming the foundation of modern, secure, and scalable Kubernetes delivery pipelines.
 
-```
-
----
-
-**What changed:**  
-
-- Removed all images from inside code blocks.  
-- Commands remain inside proper \`\`\`bash\`\`\` blocks.  
-- Image paths fixed (`project_screenshots/...`).  
-- Captions kept intact.  
-
-This README will now render **all images correctly** on GitHub.  
-
----
-
-If you want, I can also **optimize the captions and spacing** so it looks cleaner and more professional for GitHub. It would make your project look like a polished portfolio piece.  
-
-Do you want me to do that next?
 ```
