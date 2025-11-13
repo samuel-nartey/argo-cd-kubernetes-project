@@ -1,4 +1,3 @@
-````markdown
 # ArgoCDP2 – GitOps Continuous Deployment on Amazon EKS
 
 ## Project Overview
