@@ -57,16 +57,16 @@ Click “Add cluster” → “Create”.
 Enter a cluster name (e.g., argocd-eks-cluster).
 Creating the EKS Cluster (Console Overview)**  
 
-![Creating EKS Cluster Step 1](./project_screenshots/creatingEKSCluster1.png)
+![Creating EKS Cluster Step 1](project_screenshots/creatingEKSCluster1.png)
 
  Cluster Configuration Details**  
-![Creating EKS Cluster Step 2](./project_screenshots/creatingEKSCluster2.png)
+![Creating EKS Cluster Step 2](project_screenshots/creatingEKSCluster2.png)
 
 Select the desired Kubernetes version (e.g., 1.29).
 
 Choose an existing IAM role with EKS permissions or create a new one.
  Final Cluster Creation Confirmation**  
-![Creating EKS Cluster Final Step](./project_screenshots/creatingEKSCluster.png)
+![Creating EKS Cluster Final Step](project_screenshots/creatingEKSCluster.png)
 
 Configure networking:
 
@@ -97,7 +97,7 @@ Insert Screenshot: kubectl Connected to EKS Cluster
 
 ### Viewing All Namespaces in EKS
 
-![All Namespaces in EKS](./project_screenshots/allnamesapcesoneks.png)
+![All Namespaces in EKS](project_screenshots/allnamesapcesoneks.png)
 
 
 
@@ -110,7 +110,7 @@ kubectl get ns
 
 ### ArgoCD Successfully Installed with Components
 
-![ArgoCD Successfully Installed](./project_screenshots/ArgoCDSuccessfullyInstalledWithComponents.png)
+![ArgoCD Successfully Installed](project_screenshots/ArgoCDSuccessfullyInstalledWithComponents.png)
 
 Step 4: Install Argo CD
 Commands
@@ -119,7 +119,7 @@ Copy code
 # Install Argo CD into the argocd namespace
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
-![Creating ArgoCD Namespace and Installing ArgoCD](./project_screenshots/creatingargocdnamespace-and-installing-argocd.png)
+![Creating ArgoCD Namespace and Installing ArgoCD](project_screenshots/creatingargocdnamespace-and-installing-argocd.png)
 
 # Verify installation
 kubectl get all -n argocd
@@ -133,11 +133,11 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 Access the UI at:
 https://localhost:8080
 
-![Checking Service IP and Type of ArgoCD Components](./project_screenshots/CheckingServicenIPTypeofArgoCDComponenents.png)
+![Checking Service IP and Type of ArgoCD Components](project_screenshots/CheckingServicenIPTypeofArgoCDComponenents.png)
 
 ### Port Forwarding ArgoCD Service
 
-![Port Forwarding](./project_screenshots/portforwarding.png)
+![Port Forwarding](project_screenshots/portforwarding.png)
 
 Insert Screenshot: ArgoCD Login Page
 
@@ -158,11 +158,11 @@ Password: (decoded value above)
 
 ### Retrieving ArgoCD Admin Password
 
-![Retrieve ArgoCD Password](./project_screenshots/retrieveargocdpassword.png)
+![Retrieve ArgoCD Password](project_screenshots/retrieveargocdpassword.png)
 
 ### Getting the ArgoCD Admin Password and Checking the Service
 
-![Get Password and Check Service](./project_screenshots/getpassword-check-service.png)
+![Get Password and Check Service](project_screenshots/getpassword-check-service.png)
 
 
 Insert Screenshot: Successful Login to ArgoCD
@@ -170,12 +170,12 @@ Insert Screenshot: Successful Login to ArgoCD
 
 ### Logging into ArgoCD
 
-![ArgoCD Login](./project_screenshots/argocdlogin.png)
+![ArgoCD Login](project_screenshots/argocdlogin.png)
 
 
 ### ArgoCD Plain Dashboard View
 
-![ArgoCD Plain Dashboard](./project_screenshots/argocdplaindahsboard.png)
+![ArgoCD Plain Dashboard](project_screenshots/argocdplaindahsboard.png)
 
 
 Step 7: Deploy Application Using Application Manifest
@@ -190,20 +190,20 @@ kubectl apply -f application.yml
 
 ### Applying Kubernetes Manifests with kubectl
 
-![kubectl Apply](./project_screenshots/kubectl-apply.png)
+![kubectl Apply](project_screenshots/kubectl-apply.png)
 
 
 ### Application Created in ArgoCD
 
-![Application Created](./project_screenshots/application-created.png)
+![Application Created](project_screenshots/application-created.png)
 
 ### ArgoCD Deployment Overview (Step 1)
 
-![ArgoCD Deployment](./project_screenshots/argocddeployment.png)
+![ArgoCD Deployment](project_screenshots/argocddeployment.png)
 
 ### ArgoCD Deployment Overview (Step 2)
 
-![ArgoCD Deployment 2](./project_screenshots/argocddeployment2.png)
+![ArgoCD Deployment 2](project_screenshots/argocddeployment2.png)
 
 Step 8: Test Argo CD Sync Policies
 Argo CD supports Automated, Manual, SelfHeal, and Prune sync strategies.
@@ -246,23 +246,23 @@ Proper cleanup helps maintain cloud hygiene and prevents unexpected billing from
 
 ### Deleting EKS Cluster
 
-![Delete Cluster](./project_screenshots/deletecluster.png)
+![Delete Cluster](project_screenshots/deletecluster.png)
 
 ### Deleting ArgoCD Node
 
-![Deleting ArgoCD Node](./project_screenshots/deleteingargocdnode.png)
+![Deleting ArgoCD Node](project_screenshots/deleteingargocdnode.png)
 
 ### Deleting Namespace and Verification
 
-![Delete Namespace and Check](./project_screenshots/deletenamespaceandcheck.png)
+![Delete Namespace and Check](project_screenshots/deletenamespaceandcheck.png)
 
 ### Editing Deployment to Test ArgoCD
 
-![Edit Deployment](./project_screenshots/editdeployment.png)
+![Edit Deployment](project_screenshots/editdeployment.png)
 
 ### Editing Default ArgoCD Deployment Time
 
-![Editing Default ArgoCD Deployment Time](./project_screenshots/editingdefaultargocddeploymenttime.png)
+![Editing Default ArgoCD Deployment Time](project_screenshots/editingdefaultargocddeploymenttime.png)
 
 
 Key Learnings and DevSecOps Perspective
